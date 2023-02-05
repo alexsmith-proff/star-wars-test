@@ -17,9 +17,10 @@
             color: #F6F7F9;
             text-decoration: none;
             position: relative;
+            margin-right: 74px;
 
-            &:first-child {
-                margin-right: 74px;
+            &:last-child {
+                margin-right: 0;
             }
 
             &:after {
