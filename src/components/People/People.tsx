@@ -22,7 +22,7 @@ const People: FC<PeopleProps> = ({ peopleItem }) => {
                 </div>
             </div>
             <div className={s.genderBirth}>
-                <div className={s.gender}>{peopleItem.gender}</div>
+                <div className={s.gender}>{peopleItem.gender == 'n/a' ? 'hermaphrodite' : peopleItem.gender}</div>
                 <div className={s.birth}>{peopleItem.birth_year}</div>
             </div>
         </li>

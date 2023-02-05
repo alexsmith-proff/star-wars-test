@@ -35,8 +35,8 @@ const Persons: FC<PersonsProps> = ({ }) => {
                         <Filter />
                         <PeoplesList peoples={peoples} />
                     </>
-                    :
-                    <div className={s.loading}>Загрузка...</div>
+                        :
+                        <div className={s.loading}>Загрузка...</div>
                 }
             </div>
         </section>
