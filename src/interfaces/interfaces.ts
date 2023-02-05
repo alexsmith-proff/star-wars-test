@@ -1,4 +1,4 @@
-export interface INav {
+export interface INavMenu {
     text: string,
     link: string,
 }
