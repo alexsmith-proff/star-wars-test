@@ -1,0 +1,141 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // pointer-events = all  - чтобы модальное окно было кликабельным
+    pointer-events: all;
+    transition: 0.5s;
+}
+
+.window {
+    background-color: #1F2A63;
+    width: 800px;
+    height: 370px;
+    display: flex;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #17002F 42.19%, #1F2A63 100%);
+    position: relative;
+}
+
+.left {
+    width: 365px;
+    background-color: #1F2A63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.genderBirth {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.par {
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
+    border: 1px solid #000;
+    border-radius: 11px;
+    padding: 3px 7px;
+    margin-right: 15px;
+}
+
+.male {
+    background: #73D677;
+}
+
+.female {
+    background: #C956FF;
+}
+
+.hermaphrodite {
+    background: #F5DB13;
+}
+
+.birth {
+    background: #07D6F2;
+}
+
+.right {
+    padding-left: 15px;
+
+    .name {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        color: #FDFDFD;
+        text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .desc {
+        width: 265px;
+        background: #FDFDFD;
+        box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 50px;
+
+        &Value {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+        }
+    }
+
+    .parameters {
+        display: flex;
+        align-items: center;
+    }
+
+    .parameter {
+        margin-right: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        background: #FDFDFD;
+        box-shadow: 4px 4px 24px rgba(1, 17, 38, 0.2);
+        border-radius: 8px;
+        padding: 10px;
+
+        &Value {
+            width: 40px;
+            height: 40px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #212121;
+            padding: 3px;
+            border: 3px solid #212121;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+
+        &Text {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #4B4B4B;
+        }
+    }
+}
+
+.close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    cursor: pointer;
+}

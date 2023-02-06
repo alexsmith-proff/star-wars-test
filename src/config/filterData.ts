@@ -1,0 +1,1 @@
+export const eyeColor = ['all', 'black', 'white', 'yellow', 'blue', 'red', 'brown', 'blue-gray', 'orange', 'hazel', 'pink', 'gold', 'unknown']

@@ -3,7 +3,7 @@ export interface INavMenu {
     link: string,
 }
 
-export interface IPeaple {
+export interface IPerson {
     name: string,
     birth_year: string,
     eye_color: string,

@@ -1,11 +1,23 @@
 import { FC } from "react"
+import { eyeColor } from "../../config/filterData"
 
-interface FilterProps { }
+import s from './Filter.module.scss'
 
-const Filter: FC<FilterProps> = ({ }) => {
+interface FilterProps {
+    filterEyeColor: string
+    onSelect: (color: string) => void
+}
+
+const Filter: FC<FilterProps> = ({ filterEyeColor, onSelect }) => {
+   
     return (
         <>
             <h1>Filter</h1>
+            <select className={s.dropdownSelect} onChange={(e) => onSelect(e.target.value)} value={filterEyeColor}>
+                {
+                    eyeColor.map((item, index) => <option key={index}>{item}</option>)
+                }
+            </select>
         </>
     )
 }

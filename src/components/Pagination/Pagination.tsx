@@ -1,12 +1,15 @@
+import { FC } from 'react';
 import ReactPaginate from 'react-paginate'
 
 import './pagination.css'
 
-const Pagination = () => {
-    const onClick = () => {
-        console.log('sssdsd');
+interface PaginationProps {
+    pageCount: number
+    currentPage: number
+    pageOnClick: (page: number) => void
+}
 
-    }
+const Pagination: FC<PaginationProps> = ({ pageCount, currentPage, pageOnClick }) => {
     return (
         <div
             style={{
@@ -26,10 +29,11 @@ const Pagination = () => {
                 containerClassName={'pagination'}
                 disabledClassName={'disabled-page'}
                 marginPagesDisplayed={5}
+                forcePage={currentPage}
                 nextClassName={"item next "}
                 nextLabel={'next'}
-                onPageChange={() => null}
-                pageCount={9}
+                onPageChange={(page) => pageOnClick(page.selected)}
+                pageCount={pageCount}
                 pageClassName={'item pagination-page '}
                 pageRangeDisplayed={5}
                 previousClassName={"item previous"}

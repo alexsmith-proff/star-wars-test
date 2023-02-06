@@ -53,26 +53,27 @@
     display: flex;
     align-items: center;
 }
-
-.gender {
+.par{
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: #212121;
     padding: 3px 10px;
     margin-right: 15px;
-    background: #F5DB13;
     box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
     border-radius: 11px;
+
+}
+.male {
+    background: #73D677;
+}
+.female {
+    background: #C956FF;
+}
+.hermaphrodite {
+    background: #F5DB13;
 }
 
 .birth {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #212121;
-    padding: 3px 10px;
     background: #07D6F2;
-    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
-    border-radius: 11px;
 }
